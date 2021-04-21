@@ -18,7 +18,7 @@ jobs:
       working-directory: test
     - name: Deploy to Firebase
       env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: firebase deploy  --only hosting --token $FIREBASE_TOKEN
+          FIREBASE_SERVICE_ACCOUNT_TEST_C4B70: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TEST_C4B70 }}
+      run: firebase deploy  --only hosting --project test-c4b70 --token $FIREBASE_SERVICE_ACCOUNT_TEST_C4B70
       working-directory: app
       
