@@ -17,6 +17,8 @@ jobs:
       run: npm test
       working-directory: test
     - name: Deploy to Firebase
-      uses: mohammed-atif/firebase-publish-react@v1.0
-      with:
-        firebase-token: ${{ secrets.FIREBASE_TOKEN }}
+      env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      run: firebase deploy  --only hosting --token $FIREBASE_TOKEN
+      working-directory: app
+      
