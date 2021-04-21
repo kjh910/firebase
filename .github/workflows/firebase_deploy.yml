@@ -26,6 +26,9 @@ jobs:
       - name: Install Firebase Tools
         run: npm install -g firebase-tools
         working-directory: test
+      - name: Install Firebase Tools
+        run: npm run start
+        working-directory: test
       - name: deploy to Firebase Hostin
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
