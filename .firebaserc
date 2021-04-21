@@ -1,6 +1,5 @@
 {
   "projects": {
-    "prod": "test-ea984",
     "default": "test-ea984"
   }
 }
