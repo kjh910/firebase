@@ -28,6 +28,6 @@ jobs:
         working-directory: test
       - name: deploy to Firebase Hosting
         env:
-            FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: firebase deploy  --only hosting --project prod --token $FIREBASE_TOKEN
-        working-directory: app
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: firebase deploy --only hosting --project prod --token $FIREBASE_TOKEN
+        working-directory: test
