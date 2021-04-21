@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "/home/fieebase/test/",
+    "public": "/home/firebase/test/",
     "ignore": [
       "firebase.json",
       "**/.*",
